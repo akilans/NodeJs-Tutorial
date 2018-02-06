@@ -8,6 +8,11 @@
   * Column => Field
   * Join => Embedded documents, linking
 
+# Start MongoDb
+
+  * mongod --dbpath C:\mongodb-data\data --logpath C:\mongodb-data\log - Start mongodb service
+  * mongo --host 127.0.0.1:27017 - Access mongo Shell
+
 # Commands
 
   * DB data default location - /var/lib/mongodb/

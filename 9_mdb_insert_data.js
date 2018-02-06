@@ -1,3 +1,5 @@
+// Connect mongodb database & insert one entry & insert multiple entries
+
 const mongodb = require('mongodb').MongoClient;
 const db_url = "mongodb://localhost:27017";
 
@@ -6,6 +8,8 @@ mongodb.connect(db_url, (err, db) => {
     if (err) throw err;
 
     const dbo = db.db("employee");
+
+    // Insert one document [ row ]
 
     const newEmplpoyee = { first_name: "Akilan", last_name: "Subramanian", location: "Bangalore" };
 
@@ -17,6 +21,8 @@ mongodb.connect(db_url, (err, db) => {
         db.close();
 
     });
+
+    // Insert more than on document [ row ]
 
     const newEmplpoyees = [
         { first_name: "Mathan", last_name: "Raj", location: "Bangalore" },

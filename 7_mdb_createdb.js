@@ -1,4 +1,5 @@
 // Connect to MongoDB & create employee database
+
 var mongodb = require('mongodb').MongoClient;
 var db_url = "mongodb://localhost:27017/employee"
 
